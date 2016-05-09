@@ -1,6 +1,6 @@
 {
   "name": "ember-normalize-url",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A wrapper add-on for the normalize-url node package.",
   "directories": {
     "doc": "doc",
