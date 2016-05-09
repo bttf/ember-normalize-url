@@ -1,7 +1,7 @@
 {
   "name": "ember-normalize-url",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "A wrapper add-on for the normalize-url node package.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -40,10 +40,14 @@
     "loader.js": "^4.0.1"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "normalize-url",
+    "normalize",
+    "urls"
   ],
   "dependencies": {
-    "ember-cli-babel": "^5.1.6"
+    "ember-cli-babel": "^5.1.6",
+    "rsvp": "^3.2.1"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
