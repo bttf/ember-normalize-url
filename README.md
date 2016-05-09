@@ -1,6 +1,38 @@
-# Ember-normalize-url
+# ember-normalize-url
 
-This README outlines the details of collaborating on this Ember addon.
+An Ember add-on wrapper for the [normalize-url](https://github.com/sindresorhus/normalize-url) node package.
+
+## Install
+
+```
+ember install ember-normalize-url
+```
+
+## Usage
+
+Import the add-on as a basic shim:
+
+```javascript
+import normalizeUrl from 'normalize-url';
+
+export default Ember.Component.extend({
+  coolUrl: normalizeUrl('twitter.com') // coolUrl === http://twitter.com
+});
+```
+
+Or use the included helper in your templates:
+
+```handlebars
+{{#badass-urls as |url|}}
+  {{normalize-url url}}
+{{/badass-urls}}
+```
+
+normalize-url options work as well:
+
+```handlebars
+{{normalize-url someUrl normalizeProtocol=false stripWWW=false}}
+```
 
 ## Installation
 
