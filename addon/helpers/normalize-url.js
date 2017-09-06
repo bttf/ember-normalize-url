@@ -7,7 +7,6 @@ export function normalizeUrl(params, options) {
   } catch (error) {
     return '';
   }
-  //return params.length && params[0] ? _normalizeUrl(...params, options) : '';
 }
 
 export default Ember.Helper.helper(normalizeUrl);
